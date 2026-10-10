@@ -3,6 +3,7 @@
 #  Добавляет PROXY v2 header в начало LTM→pool-member, чтобы
 #  backend видел реальные L3/L4 данные клиента.
 #  Header строится в блоке CLIENT_ACCEPTED, отправляется в блоке SERVER_CONNECTED.
+#  ОТКЛЮЧИТЕ HEALTHCHECK! он не поддерживается в iRule
 # =====================================================================
 
 when RULE_INIT {
