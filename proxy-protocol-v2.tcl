@@ -56,7 +56,7 @@ when CLIENT_ACCEPTED {
     set ok 1
 
     if { [IP::version] == 4 } {
-        set fam  "11"        ;# AF_INET  + STREAM
+        set fam  "11"        ;# AF_INET + STREAM
         set alen "000c"      ;# размер адресного блока = 12 байт
         if { [catch {
             set src [pp2_v4bin [IP::client_addr]]
